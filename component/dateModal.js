@@ -18,6 +18,7 @@ export default class DateModal extends Component {
       pickerHeightStyle, 
       pickerColorStyle,
       Styles,
+      activeOpacity
     } = this.props
     const { width, height } = Dimensions.get('window')
     const modalBackgroundStyle = {
@@ -36,6 +37,7 @@ export default class DateModal extends Component {
           height,
           },modalBackgroundStyle]} 
           onPress={onPress}
+          activeOpacity={activeOpacity}
         >
           <View style={[{ width },Styles.picker,pickerHeightStyle]}>
             <TouchableWithoutFeedback 

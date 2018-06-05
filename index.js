@@ -69,7 +69,7 @@ export default class DateTimePicker extends Component {
     const pickerHeightStyle = pickerHeight ? {height : pickerHeight} : {}
     return (
       <View>
-        <TouchableOpacity onPress={this.toggleModal} activeOpacity={activeOpacity}>
+        <TouchableOpacity onPress={this.toggleModal} >
           <Text style={dateTextStyle}>
             {nowDate?nowDate:"请选择日期"}
           </Text>
@@ -81,6 +81,7 @@ export default class DateTimePicker extends Component {
           modalColor={modalColor}
           pickerHeightStyle={pickerHeightStyle}
           pickerColorStyle={pickerColorStyle} 
+          activeOpacity={activeOpacity}
         >
           <View>
             <DatePickerHead
