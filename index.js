@@ -7,7 +7,6 @@ import {
   TouchableWithoutFeedback,
   Platform,
 } from 'react-native'
-import PickerAndroid from 'react-native-picker-android'
 import { DateModal, DatePickers, DatePickerHead } from './component'
 import Styles from './style'
 import moment from 'moment'

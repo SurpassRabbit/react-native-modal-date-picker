@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KenHky/react-native-modal-date-picker"
+    "url": "https://github.com/SurpassRabbit/react-native-modal-date-picker"
   },
   "files": [
     "index",
@@ -13,7 +13,8 @@
     "component"
   ],
   "dependencies": {
-    "moment": "~2.15.2"
+    "moment": "~2.15.2",
+    "prop-types": "^15.6.1"
   },
   "keywords": [
     "react-native",
