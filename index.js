@@ -63,12 +63,13 @@ export default class DateTimePicker extends Component {
       title,
       finishText,
       type,
+      activeOpacity = 0.7,
     } = this.props
     const { nowDate,openModal, modalName } = this.state
     const pickerHeightStyle = pickerHeight ? {height : pickerHeight} : {}
     return (
       <View>
-        <TouchableOpacity onPress={this.toggleModal}>
+        <TouchableOpacity onPress={this.toggleModal} activeOpacity={activeOpacity}
           <Text style={dateTextStyle}>
             {nowDate?nowDate:"请选择日期"}
           </Text>
